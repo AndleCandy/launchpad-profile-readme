@@ -40,6 +40,9 @@ ENV/
 research_report.md
 *.log
 
+# Test cache
+.pytest_cache/
+
 # OS
 .DS_Store
 Thumbs.db
