@@ -7,9 +7,9 @@ from datetime import datetime
 class CitationManager:
     """Manages citations throughout the research process."""
     
-    def __init__(self):
+    def __init__(self, start_index: int = 0):
         self.citations: List[Dict[str, Any]] = []
-        self.citation_counter = 0
+        self.citation_counter = start_index
     
     def add_citation(self, title: str, url: str, excerpt: str) -> str:
         """Add a new citation and return its ID.
