@@ -1,0 +1,28 @@
+[project]
+name = "research-agent"
+version = "0.1.0"
+description = "Autonomous Research Agent using LangGraph for planning, searching, and generating cited reports"
+authors = [
+    {name = "Research Agent Team"}
+]
+readme = "research_agent/README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "langgraph>=0.0.50",
+    "langchain>=0.1.0",
+    "langchain-openai>=0.0.5",
+    "langchain-community>=0.0.20",
+    "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+    "markdown>=3.5.0",
+    "pydantic>=2.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_backend"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["research_agent*"]
